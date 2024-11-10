@@ -5,11 +5,10 @@ char=list(char)
 
 key=char.copy()
 random.shuffle(key)
-
+#encryption
 message=input("enter the message: ")
 cipher_text=""
 for letter in message:
-   # random.shuffle(key)
     index=char.index(letter)
     cipher_text+=key[index]
 print(f"entered message is:{message}")
