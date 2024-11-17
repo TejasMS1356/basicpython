@@ -37,8 +37,12 @@ while i<3:
                 print("NEW BALANCE  IS ",d[ac])
             elif s=="2":
                 c=int(input("ENTER THE AMOUNT TO BE WITHDRAWAL: "))
-                d[ac]-=c
-                print("CURRENT BALANCE: ",d[ac])
+                if c>d[ac]:
+                        print("please enter the amount less than the amount in the balance")
+                        print("CURRENT BALANCE: ",d[ac])
+                else:
+                        d[ac]-=c
+                        print("CURRENT BALANCE: ",d[ac])
             k=int(input("ENTER 3  TO CONTINUE THE TRANSACTION OR 4 TO EXIT: "))
             if k!=3:
                 print("****THANK YOU! VISIT AGAIN*****")
