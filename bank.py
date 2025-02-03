@@ -45,6 +45,7 @@ while i<3:
                         print("CURRENT BALANCE: ",d[ac])
             k=int(input("ENTER 3  TO CONTINUE THE TRANSACTION OR 4 TO EXIT: "))
             if k!=3:
+                print("CURRENT BALANCE IS:",d[ac])
                 print("****THANK YOU! VISIT AGAIN*****")
                 break
         break
